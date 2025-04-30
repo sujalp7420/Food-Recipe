@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FH2.css">
+    <title>Punjabi Cuisine</title>
+    <link rel="icon" href="logoT.png" type="image/png" sizes="48x48">
+    <style>
+
+header {
+            background: linear-gradient(90deg, #f5f1f1, #f8f5f5); /* Light Gradient */
+            padding: 40px;
+            color: #917791;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+            border-bottom: 3px solid #777070;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #917791;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #faf9f5;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #5e485e;
+            color: white;
+            transform: scale(1.1);
+        }
+        body {
+  background-image: url('punjabinew.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed ;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #917791;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: rgb(240, 235, 235);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); 
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #d5d9db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+
+    footer {
+            background-color: #917791;
+            color: #faf9f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-top: 3px solid #777070;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffe4e1;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Recipe Hub</h1>
+        <h2>Explore Delicious Recipes from Various Cuisines</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="FH2.html">Recipes</a> 
+        <a href="about.html">About</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="recipe-container">
+    <h2 class="cuisine-title">Punjabi Cuisine</h2>
+    <!-- Butter Chicken Recipe -->
+<div class="recipe-item">
+    <label for="butterchicken-toggle" class="item-name">Butter Chicken</label>
+    <input type="checkbox" id="butterchicken-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>500g chicken (boneless)</li>
+            <li>2 tablespoons butter</li>
+            <li>1 onion (finely chopped)</li>
+            <li>1 tomato (pureed)</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1 teaspoon garam masala</li>
+            <li>1/2 cup cream</li>
+            <li>Salt to taste</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>Heat butter in a pan and sauté the onions until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 1 minute.</li>
+            <li>Add pureed tomato, garam masala, and cook for 5 minutes.</li>
+            <li>Add the chicken pieces and cook until tender.</li>
+            <li>Add cream and mix well, cook for another 5 minutes.</li>
+            <li>Garnish with fresh coriander and serve hot with naan or rice.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Paneer Tikka Recipe -->
+<div class="recipe-item">
+    <label for="paneertikka-toggle" class="item-name">Paneer Tikka</label>
+    <input type="checkbox" id="paneertikka-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>250g paneer (cubed)</li>
+            <li>2 tablespoons yogurt</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1 tablespoon lemon juice</li>
+            <li>1 tablespoon red chili powder</li>
+            <li>1 teaspoon turmeric powder</li>
+            <li>1 teaspoon garam masala</li>
+            <li>Salt to taste</li>
+            <li>1 tablespoon oil (for grilling)</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>In a bowl, mix yogurt, ginger-garlic paste, lemon juice, red chili powder, turmeric powder, garam masala, and salt.</li>
+            <li>Marinate the paneer cubes in this mixture for 30 minutes.</li>
+            <li>Heat oil in a grill pan and cook the marinated paneer cubes for 3-4 minutes on each side.</li>
+            <li>Serve hot with green chutney and onions.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Paneer Butter Masala Recipe -->
+<div class="recipe-item">
+    <label for="paneerbuttermasala-toggle" class="item-name">Paneer Butter Masala</label>
+    <input type="checkbox" id="paneerbuttermasala-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>250g paneer (cubed)</li>
+            <li>2 tablespoons butter</li>
+            <li>1 onion (finely chopped)</li>
+            <li>1 tomato (pureed)</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1/2 teaspoon red chili powder</li>
+            <li>1/2 teaspoon garam masala</li>
+            <li>1/2 cup cream</li>
+            <li>Salt to taste</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>Heat butter in a pan and sauté the onions until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 1 minute.</li>
+            <li>Add pureed tomato, red chili powder, garam masala, and cook for 5 minutes.</li>
+            <li>Add the paneer cubes and cook for 2-3 minutes.</li>
+            <li>Add cream and mix well, cook for another 5 minutes.</li>
+            <li>Garnish with fresh coriander and serve hot with naan or rice.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Dal Makhani Recipe -->
+<div class="recipe-item">
+    <label for="dalmakhani-toggle" class="item-name">Dal Makhani</label>
+    <input type="checkbox" id="dalmakhani-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>1 cup whole black lentils (sabut urad dal)</li>
+            <li>1/4 cup kidney beans (rajma)</li>
+            <li>2 tablespoons butter</li>
+            <li>1 onion (finely chopped)</li>
+            <li>1 tomato (pureed)</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1 teaspoon garam masala</li>
+            <li>1/2 teaspoon red chili powder</li>
+            <li>Salt to taste</li>
+            <li>1/4 cup cream</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>Soak the lentils and kidney beans overnight and cook them in a pressure cooker until soft.</li>
+            <li>Heat butter in a pan and sauté onions until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 1 minute.</li>
+            <li>Add pureed tomato, garam masala, and red chili powder. Cook for 5 minutes.</li>
+            <li>Add the cooked lentils and kidney beans to the pan and simmer for 20 minutes.</li>
+            <li>Add cream and cook for another 5 minutes. Serve hot with naan or rice.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Paneer Pasanda Recipe -->
+<div class="recipe-item">
+    <label for="paneerpasanda-toggle" class="item-name">Paneer Pasanda</label>
+    <input type="checkbox" id="paneerpasanda-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>250g paneer (sliced)</li>
+            <li>1/4 cup yogurt</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1/2 teaspoon turmeric powder</li>
+            <li>1 teaspoon red chili powder</li>
+            <li>1 teaspoon garam masala</li>
+            <li>1/4 cup cashew nuts (ground)</li>
+            <li>1/4 cup cream</li>
+            <li>Salt to taste</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>Mix yogurt, ginger-garlic paste, turmeric powder, red chili powder, garam masala, and salt to make a marinade.</li>
+            <li>Marinate the paneer slices for 30 minutes.</li>
+            <li>Heat oil in a pan and cook the marinated paneer slices until golden brown on both sides.</li>
+            <li>In the same pan, add cashew paste and cream, cook for 5 minutes.</li>
+            <li>Add the cooked paneer slices and simmer for 5 more minutes. Serve hot with naan or rice.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Tandoori Roti Recipe -->
+<div class="recipe-item">
+    <label for="tandooriroti-toggle" class="item-name">Tandoori Roti</label>
+    <input type="checkbox" id="tandooriroti-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>2 cups whole wheat flour</li>
+            <li>1 teaspoon active dry yeast</li>
+            <li>1/2 teaspoon sugar</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1/2 cup warm water</li>
+            <li>1 tablespoon oil</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>In a bowl, mix flour, yeast, sugar, and salt.</li>
+            <li>Add warm water and knead into a smooth dough. Cover and let it rise for 1-2 hours.</li>
+            <li>Divide the dough into small balls and roll them into flat discs.</li>
+            <li>Cook them on a tandoor or in a hot oven until puffed and golden brown.</li>
+            <li>Brush with ghee or butter and serve hot.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Jeera Rice Recipe -->
+<!-- Jeera Rice Recipe -->
+<div class="recipe-item">
+    <label for="jeerarice-toggle" class="item-name">Jeera Rice</label>
+    <input type="checkbox" id="jeerarice-toggle" class="toggle-checkbox">
+    <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>1 cup basmati rice</li>
+            <li>2 tablespoons ghee</li>
+            <li>1 teaspoon cumin seeds</li>
+            <li>1/2 teaspoon salt</li>
+            <li>2 cups water</li>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol class="steps-list">
+            <li>Heat ghee in a pan, add cumin seeds, and sauté until they splutter.</li>
+            <li>Add the washed basmati rice and sauté for 2 minutes.</li>
+            <li>Add water and salt, bring to a boil, then reduce the heat to low.</li>
+            <li>Cover and cook for 10-12 minutes until the rice is done.</li>
+            <li>Fluff the rice and serve hot with your favorite curry.</li>
+        </ol>
+    </div>
+    
+</div>
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>Cuisines</h3>
+        <p>
+            <a href="chinese.html">Chinese</a> |
+            <a href="punjabi.html">Punjabi</a> |
+            <a href="bengali.html">Bengali</a> |
+            <a href="italian.html">Italian</a> |
+            <a href="starter.html">Starters</a> |
+            <a href="mocktail.html">Mocktails</a> |
+            <a href="south.html">South Indian</a> |
+            <a href="deserts.html">Desserts</a> |
+            <a href="gujarati.html">Gujarati</a>
+        </p>
+        <p>&copy; 2025 Food Recipe Hub. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </div>
+</footer>   
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="FH2.css">
+<title>Dessert Recipes</title>
+<link rel="icon" href="logoT.png" type="image/png" sizes="48x48">
+<style>
+
+header {
+            background: linear-gradient(90deg, #f5f1f1, #f8f5f5); /* Light Gradient */
+            padding: 40px;
+            color: #917791;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+            border-bottom: 3px solid #777070;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #917791;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #faf9f5;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #5e485e;
+            color: white;
+            transform: scale(1.1);
+        }
+    body {
+      background-image: url('desertback.jpg'); /* Set your image here */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+      margin: 20px;
+      color: #333; /* Default text color for better contrast on the background */
+    }
+
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #917791; /* Semi-transparent white background for content */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: rgb(240, 235, 235);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); /* Semi-transparent white for recipe items */
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #d5d9db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+
+    footer {
+            background-color: #917791;
+            color: #faf9f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-top: 3px solid #777070;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffe4e1;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Food Recipe Hub</h1>
+    <h2>Explore Delicious Recipes from Various Cuisines</h2>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="FH2.html">Recipes</a>
+</nav>
+
+<div class="recipe-container">
+<h2 class="cuisine-title">Dessert Recipes</h2>
+
+
+<!-- Chocolate Lava Cake Recipe -->
+<div class="recipe-item">
+  <label for="chocolate-lava-cake-toggle" class="item-name">Chocolate Lava Cake</label>
+  <input type="checkbox" id="chocolate-lava-cake-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>100g dark chocolate</li>
+      <li>100g butter</li>
+      <li>2 eggs</li>
+      <li>50g sugar</li>
+      <li>30g all-purpose flour</li>
+      <li>1 teaspoon vanilla extract</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat the oven to 200°C (400°F).</li>
+      <li>Melt chocolate and butter together.</li>
+      <li>In a separate bowl, whisk eggs and sugar until fluffy.</li>
+      <li>Fold in melted chocolate mixture and vanilla extract.</li>
+      <li>Add flour and mix gently.</li>
+      <li>Pour into greased ramekins and bake for 8-10 minutes.</li>
+      <li>Serve warm with ice cream.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Tiramisu Recipe -->
+<div class="recipe-item">
+  <label for="tiramisu-toggle" class="item-name">Tiramisu</label>
+  <input type="checkbox" id="tiramisu-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>250g mascarpone cheese</li>
+      <li>2 egg yolks</li>
+      <li>50g sugar</li>
+      <li>1 cup brewed espresso</li>
+      <li>100g ladyfinger biscuits</li>
+      <li>1 tablespoon cocoa powder</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Whisk egg yolks and sugar until creamy.</li>
+      <li>Fold in mascarpone cheese.</li>
+      <li>Dip ladyfingers in espresso and layer them in a dish.</li>
+      <li>Spread mascarpone mixture over the layer.</li>
+      <li>Repeat layers and dust with cocoa powder.</li>
+      <li>Refrigerate for 4 hours before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Cheesecake Recipe -->
+<div class="recipe-item">
+  <label for="cheesecake-toggle" class="item-name">Cheesecake</label>
+  <input type="checkbox" id="cheesecake-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200g cream cheese</li>
+      <li>100g sugar</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>2 eggs</li>
+      <li>100g crushed graham crackers</li>
+      <li>50g melted butter</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix crushed graham crackers with melted butter and press into a pan.</li>
+      <li>Beat cream cheese, sugar, and vanilla until smooth.</li>
+      <li>Add eggs one at a time, mixing well.</li>
+      <li>Pour over the crust and bake for 40 minutes.</li>
+      <li>Let it cool and refrigerate before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Apple Pie Recipe -->
+<div class="recipe-item">
+  <label for="apple-pie-toggle" class="item-name">Apple Pie</label>
+  <input type="checkbox" id="apple-pie-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>2 apples (sliced)</li>
+      <li>100g sugar</li>
+      <li>1 teaspoon cinnamon</li>
+      <li>1 tablespoon lemon juice</li>
+      <li>200g all-purpose flour</li>
+      <li>100g butter</li>
+      <li>50ml water</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix apples with sugar, cinnamon, and lemon juice.</li>
+      <li>Prepare dough with flour, butter, and water.</li>
+      <li>Roll out dough and place half in a pie pan.</li>
+      <li>Fill with apple mixture and cover with another dough layer.</li>
+      <li>Bake for 40 minutes until golden brown.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Panna Cotta Recipe -->
+<div class="recipe-item">
+  <label for="panna-cotta-toggle" class="item-name">Panna Cotta</label>
+  <input type="checkbox" id="panna-cotta-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200ml heavy cream</li>
+      <li>50g sugar</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>1 teaspoon gelatin</li>
+      <li>2 tablespoons water</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Heat cream, sugar, and vanilla in a saucepan until warm.</li>
+      <li>Dissolve gelatin in water and add to the cream mixture.</li>
+      <li>Pour into molds and refrigerate for 4 hours.</li>
+      <li>Serve chilled with fruit or caramel sauce.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Crème Brûlée Recipe -->
+<div class="recipe-item">
+  <label for="creme-brulee-toggle" class="item-name">Crème Brûlée</label>
+  <input type="checkbox" id="creme-brulee-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200ml heavy cream</li>
+      <li>50g sugar</li>
+      <li>2 egg yolks</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>2 tablespoons sugar (for caramelizing)</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat oven to 150°C (300°F).</li>
+      <li>Heat cream and vanilla in a saucepan.</li>
+      <li>Whisk egg yolks and sugar together.</li>
+      <li>Gradually mix hot cream into the egg mixture.</li>
+      <li>Pour into ramekins and bake for 30 minutes.</li>
+      <li>Cool, then sprinkle sugar on top and caramelize with a torch.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Chocolate Mousse Recipe -->
+<div class="recipe-item">
+  <label for="chocolate-mousse-toggle" class="item-name">Chocolate Mousse</label>
+  <input type="checkbox" id="chocolate-mousse-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>100g dark chocolate</li>
+      <li>200ml heavy cream</li>
+      <li>1 tablespoon sugar</li>
+      <li>1 teaspoon vanilla extract</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Melt chocolate and let it cool slightly.</li>
+      <li>Whip cream with sugar and vanilla until stiff peaks form.</li>
+      <li>Gently fold in the melted chocolate.</li>
+      <li>Refrigerate for 2 hours before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Brownies Recipe -->
+<div class="recipe-item">
+  <label for="brownies-toggle" class="item-name">Brownies</label>
+  <input type="checkbox" id="brownies-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>100g dark chocolate</li>
+      <li>100g butter</li>
+      <li>100g sugar</li>
+      <li>2 eggs</li>
+      <li>50g all-purpose flour</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Melt chocolate and butter together.</li>
+      <li>Whisk eggs and sugar until fluffy.</li>
+      <li>Mix in the melted chocolate mixture.</li>
+      <li>Add flour and stir gently.</li>
+      <li>Pour into a greased pan and bake for 20 minutes.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Fruit Tart Recipe -->
+<div class="recipe-item">
+  <label for="fruit-tart-toggle" class="item-name">Fruit Tart</label>
+  <input type="checkbox" id="fruit-tart-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200g all-purpose flour</li>
+      <li>100g butter</li>
+      <li>50g sugar</li>
+      <li>200ml custard</li>
+      <li>Assorted fruits (strawberries, kiwi, blueberries)</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix flour, butter, and sugar to make dough.</li>
+      <li>Roll out and press into a tart pan. Bake for 15 minutes.</li>
+      <li>Fill with custard and top with fresh fruits.</li>
+      <li>Chill before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Gulab Jamun Recipe -->
+<div class="recipe-item">
+  <label for="gulab-jamun-toggle" class="item-name">Gulab Jamun</label>
+  <input type="checkbox" id="gulab-jamun-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup milk powder</li>
+      <li>1/4 cup all-purpose flour</li>
+      <li>1/4 teaspoon baking soda</li>
+      <li>2 tablespoons ghee</li>
+      <li>1/4 cup milk</li>
+      <li>1 cup sugar</li>
+      <li>1/2 cup water</li>
+      <li>1/2 teaspoon cardamom powder</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix milk powder, flour, baking soda, ghee, and milk into a soft dough.</li>
+      <li>Shape into small balls and fry until golden brown.</li>
+      <li>Prepare sugar syrup with water, sugar, and cardamom powder.</li>
+      <li>Soak fried balls in syrup for 1 hour before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+</div>
+<footer>
+  <div class="footer-content">
+      <h3>Cuisines</h3>
+      <p>
+          <a href="chinese.html">Chinese</a> |
+          <a href="punjabi.html">Punjabi</a> |
+          <a href="bengali.html">Bengali</a> |
+          <a href="italian.html">Italian</a> |
+          <a href="starter.html">Starters</a> |
+          <a href="mocktail.html">Mocktails</a> |
+          <a href="south.html">South Indian</a> |
+          <a href="deserts.html">Desserts</a> |
+          <a href="gujarati.html">Gujarati</a>
+      </p>
+      <p>&copy; 2025 Food Recipe Hub. All rights reserved.</p>
+      <p>Follow us on:
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a>
+      </p>
+  </div>
+</footer>
+</body>
+</html>

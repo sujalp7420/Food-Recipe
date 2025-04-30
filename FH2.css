@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    background-color: #ffe4e1;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Recipe Container */
+.recipe-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #efddeb;
+    /* White Background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow */
+}
+
+/* Cuisine Title */
+.cuisine-title {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Recipe Item */
+.recipe-item {
+    background: #f8f8f8;
+    /* Very Light Gray */
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(255, 215, 0, 0.1);
+    /* Lighter shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-item:hover {
+    transform: scale(1.03);
+}
+
+/* Recipe Name (Label) */
+.item-name {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    padding: 12px;
+    color: #ef4d78;
+    /* Golden Yellow */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.item-name:hover {
+    color: rgb(174, 49, 159);
+    /* Brighter Gold */
+}
+
+/* Hide Checkboxes */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Recipe Details */
+.recipe-details {
+    background: #f0f0f0;
+    /* Light Gray */
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: none;
+    /* Changed to none */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow */
+}
+
+/* Headings in Recipe Details */
+.recipe-details h3 {
+    font-size: 22px;
+    color: #d33483;
+    /* Gold */
+    margin-bottom: 12px;
+}
+
+/* Ingredients List */
+.ingredients-list,
+.steps-list {
+    text-align: left;
+    padding-left: 22px;
+    font-size: 18px;
+    color: #666;
+    /* Darker grey */
+}
+
+/* Ingredients & Steps List Items */
+.ingredients-list li,
+.steps-list li {
+    margin-bottom: 8px;
+}
+
+/* Steps List */
+.steps-list {
+    list-style-type: decimal;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #6a153f;
+    /* Golden Text */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f0e6e5;
+    /* Brighter Gold */
+}
+
+/* Show Recipe Details on Checkbox Click */
+.toggle-checkbox:checked+.recipe-details {
+    display: block;
+}

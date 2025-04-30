@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="FH2.css">
+<title>Appetizers & Snacks Recipes</title>
+<link rel="icon" href="logoT.png" type="image/png" sizes="48x48">
+<style>
+
+header {
+            background: linear-gradient(90deg, #f5f1f1, #f8f5f5); 
+            padding: 40px;
+            color: #917791;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+            border-bottom: 3px solid #777070;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #917791;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #faf9f5;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #5e485e;
+            color: white;
+            transform: scale(1.1);
+        }
+    body {
+  background-image: url('startersnew.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed ;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #917791;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: rgb(240, 235, 235);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); 
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #d5d9db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+    footer {
+            background-color: #917791;
+            color: #faf9f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-top: 3px solid #777070;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffe4e1;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Food Recipe Hub</h1>
+    <h2>Explore Delicious Recipes from Various Cuisines</h2>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="FH2.html">Recipes</a> 
+  <a href="about.html">About</a> 
+  <a href="contact.html">Contact</a>
+</nav>
+<div class="recipe-container">
+<h2 class="cuisine-title">Appetizers & Snacks Recipes</h2>
+
+
+<!-- Spring Rolls Recipe -->
+<div class="recipe-item">
+  <label for="spring-rolls-toggle" class="item-name">Spring Rolls</label>
+  <input type="checkbox" id="spring-rolls-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup shredded cabbage</li>
+      <li>1/2 cup grated carrots</li>
+      <li>1/4 cup chopped bell peppers</li>
+      <li>1/4 cup chopped onions</li>
+      <li>1 tablespoon soy sauce</li>
+      <li>1 teaspoon vinegar</li>
+      <li>Salt and pepper to taste</li>
+      <li>Spring roll sheets</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix all vegetables with soy sauce, vinegar, salt, and pepper.</li>
+      <li>Place a spoonful of the mixture in a spring roll sheet and roll tightly.</li>
+      <li>Deep fry until golden brown.</li>
+      <li>Serve hot with sweet chili sauce.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Hakka Noodles Recipe -->
+<div class="recipe-item">
+  <label for="hakka-noodles-toggle" class="item-name">Hakka Noodles</label>
+  <input type="checkbox" id="hakka-noodles-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200g Hakka noodles</li>
+      <li>1/2 cup mixed vegetables (carrot, capsicum, beans)</li>
+      <li>1 tablespoon soy sauce</li>
+      <li>1 tablespoon vinegar</li>
+      <li>1 teaspoon garlic (minced)</li>
+      <li>2 tablespoons oil</li>
+      <li>Salt and pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Boil noodles as per package instructions, drain, and keep aside.</li>
+      <li>Heat oil in a pan, add garlic, and sauté vegetables.</li>
+      <li>Add soy sauce, vinegar, salt, and pepper.</li>
+      <li>Toss in noodles and stir well.</li>
+      <li>Serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Chilli Paneer Recipe -->
+<div class="recipe-item">
+  <label for="chilli-paneer-toggle" class="item-name">Chilli Paneer</label>
+  <input type="checkbox" id="chilli-paneer-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup paneer cubes</li>
+      <li>1/4 cup chopped bell peppers</li>
+      <li>1/4 cup chopped onions</li>
+      <li>1 tablespoon soy sauce</li>
+      <li>1 tablespoon tomato ketchup</li>
+      <li>1 teaspoon red chili sauce</li>
+      <li>1/2 teaspoon garlic (minced)</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Fry paneer cubes until golden and set aside.</li>
+      <li>Heat oil, sauté garlic, onions, and bell peppers.</li>
+      <li>Add sauces and mix well.</li>
+      <li>Toss in fried paneer, coat well, and serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Corn Cheese Balls Recipe -->
+<div class="recipe-item">
+  <label for="corn-cheese-balls-toggle" class="item-name">Corn Cheese Balls</label>
+  <input type="checkbox" id="corn-cheese-balls-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup mashed potatoes</li>
+      <li>1/2 cup sweet corn</li>
+      <li>1/4 cup grated cheese</li>
+      <li>2 tablespoons cornflour</li>
+      <li>Salt and pepper to taste</li>
+      <li>Bread crumbs for coating</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix potatoes, corn, cheese, cornflour, salt, and pepper.</li>
+      <li>Shape into balls, coat with breadcrumbs.</li>
+      <li>Deep fry until golden brown.</li>
+      <li>Serve hot with ketchup.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Stuffed Mushrooms Recipe -->
+<div class="recipe-item">
+  <label for="stuffed-mushrooms-toggle" class="item-name">Stuffed Mushrooms</label>
+  <input type="checkbox" id="stuffed-mushrooms-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>10 button mushrooms</li>
+      <li>1/4 cup grated cheese</li>
+      <li>1/4 cup chopped onions</li>
+      <li>1 teaspoon garlic (minced)</li>
+      <li>1 tablespoon butter</li>
+      <li>Salt and pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Remove mushroom stems and chop them.</li>
+      <li>Sauté chopped stems with onions and garlic.</li>
+      <li>Mix with cheese, salt, and pepper.</li>
+      <li>Stuff mixture into mushrooms and bake at 180°C for 10 minutes.</li>
+      <li>Serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Veg Seekh Kebab Recipe -->
+<div class="recipe-item">
+  <label for="veg-seekh-kebab-toggle" class="item-name">Veg Seekh Kebab</label>
+  <input type="checkbox" id="veg-seekh-kebab-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup mashed potatoes</li>
+      <li>1/2 cup grated carrots</li>
+      <li>1/4 cup chopped onions</li>
+      <li>1/4 cup bread crumbs</li>
+      <li>1 teaspoon garam masala</li>
+      <li>Salt to taste</li>
+      <li>Oil for grilling</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix all ingredients into a dough.</li>
+      <li>Shape into kebabs and grill until golden brown.</li>
+      <li>Serve hot with mint chutney.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Paneer Tikka Recipe -->
+<div class="recipe-item">
+  <label for="paneer-tikka-toggle" class="item-name">Paneer Tikka</label>
+  <input type="checkbox" id="paneer-tikka-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup paneer cubes</li>
+      <li>1/2 cup curd</li>
+      <li>1 teaspoon red chili powder</li>
+      <li>1/2 teaspoon turmeric</li>
+      <li>1 teaspoon garam masala</li>
+      <li>1 tablespoon lemon juice</li>
+      <li>Salt to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix curd with spices and marinate paneer.</li>
+      <li>Grill or bake until golden brown.</li>
+      <li>Serve hot with chutney.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Crispy Baby Corn Recipe -->
+<div class="recipe-item">
+  <label for="crispy-baby-corn-toggle" class="item-name">Crispy Baby Corn</label>
+  <input type="checkbox" id="crispy-baby-corn-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup baby corn</li>
+      <li>2 tablespoons cornflour</li>
+      <li>1 tablespoon all-purpose flour</li>
+      <li>1 teaspoon red chili powder</li>
+      <li>Salt to taste</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix baby corn with flour, chili powder, and salt.</li>
+      <li>Deep fry until crispy.</li>
+      <li>Serve hot with chili sauce.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Cheese Garlic Bread Recipe -->
+<div class="recipe-item">
+  <label for="cheese-garlic-bread-toggle" class="item-name">Cheese Garlic Bread</label>
+  <input type="checkbox" id="cheese-garlic-bread-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>4 slices of bread</li>
+      <li>2 tablespoons butter</li>
+      <li>1 teaspoon minced garlic</li>
+      <li>1/4 cup grated cheese</li>
+      <li>1 teaspoon oregano</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Mix butter with garlic and spread on bread.</li>
+      <li>Sprinkle cheese and oregano.</li>
+      <li>Bake at 180°C for 5 minutes.</li>
+      <li>Serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Chicken Lollipop Recipe -->
+<div class="recipe-item">
+  <label for="chicken-lollipop-toggle" class="item-name">Chicken Lollipop</label>
+  <input type="checkbox" id="chicken-lollipop-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>6 chicken wings</li>
+      <li>2 tablespoons cornflour</li>
+      <li>1 tablespoon soy sauce</li>
+      <li>1 teaspoon red chili powder</li>
+      <li>Salt to taste</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Marinate chicken with spices and soy sauce.</li>
+      <li>Coat with cornflour and deep fry.</li>
+      <li>Serve hot with schezwan sauce.</li>
+    </ol>
+  </div>
+</div>
+
+
+</div>
+<footer>
+  <div class="footer-content">
+      <h3>Cuisines</h3>
+      <p>
+          <a href="chinese.html">Chinese</a> |
+          <a href="punjabi.html">Punjabi</a> |
+          <a href="bengali.html">Bengali</a> |
+          <a href="italian.html">Italian</a> |
+          <a href="starter.html">Starters</a> |
+          <a href="mocktail.html">Mocktails</a> |
+          <a href="south.html">South Indian</a> |
+          <a href="deserts.html">Desserts</a> |
+          <a href="gujarati.html">Gujarati</a>
+      </p>
+      <p>&copy; 2025 Food Recipe Hub. All rights reserved.</p>
+      <p>Follow us on:
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a>
+      </p>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+

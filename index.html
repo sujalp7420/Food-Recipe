@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <meta name="description" content="Explore a variety of delicious 
+recipes, including Punjabi, Chinese, Pizza, Gujarati, and more!"> 
+  <meta name="keywords" content="food recipes, Punjabi food, Chinese food, 
+pizza recipes, Gujarati food, easy recipes, tasty dishes"> 
+  <meta name="author" content="Food Recipe Hub"> 
+  <title>Food Recipe Hub</title> 
+  <link rel="stylesheet" href="FH2.css"> 
+  <link rel="icon" href="logoT.png" type="image/png" sizes="48x48">
+  <style> 
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      text-align: center; 
+      background-color: #ffe4e1; 
+      margin: 0; 
+      padding: 0; 
+      color: #333; 
+    } 
+ 
+    header { 
+      background: linear-gradient(90deg, #f5f1f1, #f8f5f5); 
+      padding: 40px; 
+      color: #917791; 
+      font-family: 'Courier New', Courier, monospace; 
+      font-size: 36px; 
+      font-weight: bold; 
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); 
+      letter-spacing: 2px; 
+      animation: fadeIn 1s ease-in-out; 
+      border-bottom: 3px solid #777070; 
+    } 
+ 
+    h1 { 
+      margin-bottom: 10px; 
+    } 
+ 
+    h2 { 
+      font-size: 22px; 
+      font-weight: normal; 
+      margin-top:10px; 
+    } 
+ 
+    nav { 
+      background-color: #917791; 
+      padding: 10px; 
+      text-align: center; 
+    } 
+ 
+    nav a { 
+      color: #faf9f5; 
+     
+      text-decoration: none; 
+      padding: 10px 20px ; 
+      font-size: 18px; 
+      margin: 0 10px; 
+      border-radius: 10px; 
+      transition: background 0.3s ease; 
+    } 
+ 
+    nav a:hover { 
+      background-color: #5e485e; 
+      color: white; 
+      text-decoration: none;
+    } 
+ 
+    .intro { 
+      margin: 40px auto; 
+      max-width: 900px; 
+      font-size: 22px; 
+      color: #333; 
+      line-height: 1.8; 
+      padding: 30px; 
+      background: #fff; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+      border-radius: 15px; 
+      animation: fadeInUp 1s ease-in-out; 
+      text-align:left; 
+      font-weight: 400; 
+    } 
+ 
+    .slider-container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      overflow-x: auto; 
+      padding-bottom: 20px; 
+    } 
+ 
+    .slider-track { 
+      display: flex; 
+      gap: 20px; 
+    } 
+ 
+    .slide { 
+      min-width: 260px; 
+      max-width: 260px; 
+      border-radius: 15px; 
+      overflow :auto; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+      background: #fff; 
+      transition: transform 0.3s ease; 
+    } 
+ 
+    .slide:hover { 
+      transform: scale(1.05); 
+    } 
+ 
+    .slide img { 
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; 
+      display: block; 
+    } 
+
+    .recipe-link { 
+      display: inline-block; 
+      margin-top: 30px; 
+      padding: 12px 28px; 
+      background: #5e485e; 
+      color: white; 
+      font-size: 20px; 
+      border-radius: 8px; 
+      font-weight: bold; 
+      transition: background 0.3s ease, transform 0.4s ease ; 
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); 
+    } 
+ 
+    .recipe-link:hover { 
+      text-decoration: none;
+      background: linear-gradient(90deg, #cc3300, #992600); 
+      transform: scale(1.1); 
+
+    } 
+    
+    footer { 
+      background-color: #917791; 
+      color: #faf9f5; 
+      padding: 20px; 
+      text-align: center; 
+      font-size: 16px; 
+      border-top: 3px solid #777070; 
+      margin-top: 40px; 
+    } 
+ 
+    footer a { 
+      color: #ffe4e1; 
+      text-decoration: none; 
+      margin: 0 5px; 
+      transition: color 0.3s ease; 
+    } 
+ 
+    footer a:hover { 
+      color: #ffffff; 
+      text-decoration: underline; 
+    } 
+    @media (max-width: 768px) { 
+      .slider-container { 
+        padding-bottom: 10px; 
+      } 
+ 
+      .slider-track { 
+        gap: 15px; 
+      } 
+ 
+      .slide { 
+        min-width: 200px; 
+        max-width: 200px; 
+      } 
+    } 
+ 
+    @media (max-width: 480px) { 
+      .slider-container { 
+        padding-bottom: 5px; 
+      } 
+ 
+      .slide { 
+        min-width: 150px; 
+        max-width: 150px; 
+      } 
+ 
+      .slide img { 
+        height: 150px; 
+      } 
+    } 
+ 
+  </style> 
+</head> 
+<body> 
+  <header> 
+    <h1>Welcome to Food Recipe Hub</h1> 
+    <h2>Explore Delicious Recipes from Various Cuisines</h2> 
+  </header> 
+ 
+  <nav> 
+    <a href="index.html">Home</a>
+    <a href="FH2.html">Recipes</a> 
+    <a href="about.html">About</a> 
+    <a href="contact.html">Contact</a> 
+     
+  </nav> 
+ 
+  <main> 
+    <section class="intro"> 
+      <p>Discover a variety of delicious recipes from different cuisines. 
+Whether you're looking for a quick snack or a gourmet meal, we have you 
+covered!</p> 
+    </section> 
+ 
+ 
+    <div class="slider-container"> 
+      <div class="slider-track"> 
+        <div class="slide"><a href="punjabi.html"><img src="punjabiphotonew.png" alt="Punjabi Dish"></a></div> 
+        <div class="slide"><a href="chinese.html"><img src="chinesephotonew.png" alt="Chinese Dish"></a></div> 
+        <div class="slide"><a href="italian.html"><img src="pizzanew.png" alt="Pizza"></a></div> 
+        <div class="slide"><a href="gujarati.html"><img src="Gujarati.jpg" alt="Gujarati Dish"></a></div> 
+        <div class="slide"><a href="bengali.html"><img src="bengaliF.jpg" alt="Bengali Dish"></a></div> 
+        <div class="slide"><a href="starter.html"><img src="starter.jpg" alt="Starters"></a></div> 
+        <div class="slide"><a href="mocktail.html"><img src="mocktailF.jpg" alt="Mocktails"></a></div> 
+        <div class="slide"><a href="south.html"><img src="south.jpg" alt="South Indian"></a></div> 
+        <div class="slide"><a href="deserts.html"><img src="desert.jpg" alt="Desserts"></a></div> 
+      </div> 
+    </div>
+    
+ 
+    <a href="FH2.html" class="recipe-link">Explore More Recipes</a> 
+  </main> 
+ 
+  <footer> 
+    <div class="footer-content"> 
+      <h3>Cuisines</h3> 
+      <p> 
+        <a href="chinese.html">Chinese</a> | 
+        <a href="punjabi.html">Punjabi</a> | 
+        <a href="bengali.html">Bengali</a> | 
+        <a href="italian.html">Italian</a> | 
+        <a href="starter.html">Starters</a> | 
+        <a href="mocktail.html">Mocktails</a> | 
+        <a href="south.html">South Indian</a> | 
+        <a href="deserts.html">Desserts</a> | 
+        <a href="gujarati.html">Gujarati</a> 
+      </p> 
+      <p>&copy; 2025 Food Recipe Hub. All rights reserved.</p> 
+      <p>Follow us on: 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> 
+      </p> 
+    </div> 
+  </footer> 
+  
+</body> 
+</html> 
+ 
+ 

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="FH2.css">
+<title>Italian Cuisine</title>
+<link rel="icon" href="logoT.png" type="image/png" sizes="48x48">
+<style>
+
+header {
+            background: linear-gradient(90deg, #f5f1f1, #f8f5f5); /* Light Gradient */
+            padding: 40px;
+            color: #917791;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+            border-bottom: 3px solid #777070;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #917791;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #faf9f5;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #5e485e;
+            color: white;
+            transform: scale(1.1);
+        }
+  body {
+  background-image: url('italiannew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed ;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #917791;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: rgb(240, 235, 235);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); 
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #d5d9db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+
+    footer {
+            background-color: #917791;
+            color: #faf9f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-top: 3px solid #777070;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffe4e1;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Food Recipe Hub</h1>
+    <h2>Explore Delicious Recipes from Various Cuisines</h2>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="FH2.html">Recipes</a> 
+  <a href="about.html">About</a> 
+  <a href="contact.html">Contact</a>
+</nav>
+<div class="recipe-container">
+<h2 class="cuisine-title">Italian Cuisine</h2>
+
+
+<!-- Pizza Margherita Recipe -->
+<div class="recipe-item">
+  <label for="pizza-margherita-toggle" class="item-name">Pizza Margherita</label>
+  <input type="checkbox" id="pizza-margherita-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 pizza dough</li>
+      <li>1/2 cup tomato sauce</li>
+      <li>150g fresh mozzarella</li>
+      <li>Fresh basil leaves</li>
+      <li>1 tbsp olive oil</li>
+      <li>Salt to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Preheat the oven to 250°C (480°F).</li>
+      <li>Roll out the pizza dough on a floured surface.</li>
+      <li>Spread tomato sauce evenly over the dough.</li>
+      <li>Tear mozzarella into small pieces and distribute over the pizza.</li>
+      <li>Bake for 7-10 minutes until golden brown.</li>
+      <li>Garnish with fresh basil and drizzle with olive oil before serving.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Lasagna Recipe -->
+<div class="recipe-item">
+  <label for="lasagna-toggle" class="item-name">Lasagna</label>
+  <input type="checkbox" id="lasagna-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>12 lasagna sheets</li>
+      <li>500g minced beef</li>
+      <li>1 onion (chopped)</li>
+      <li>2 cups tomato sauce</li>
+      <li>1 cup ricotta cheese</li>
+      <li>1 cup mozzarella cheese (grated)</li>
+      <li>1/2 cup Parmesan cheese (grated)</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp salt</li>
+      <li>1/2 tsp black pepper</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Heat oil in a pan and sauté onions. Add minced beef and cook until browned.</li>
+      <li>Add tomato sauce, salt, and pepper. Simmer for 10 minutes.</li>
+      <li>Cook lasagna sheets as per package instructions.</li>
+      <li>Layer sauce, lasagna sheets, and ricotta cheese in a baking dish. Repeat layers.</li>
+      <li>Top with mozzarella and Parmesan cheese.</li>
+      <li>Bake at 180°C (350°F) for 30 minutes. Serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Risotto alla Milanese Recipe -->
+<div class="recipe-item">
+  <label for="risotto-milanese-toggle" class="item-name">Risotto alla Milanese</label>
+  <input type="checkbox" id="risotto-milanese-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>1 cup Arborio rice</li>
+      <li>4 cups chicken or vegetable broth</li>
+      <li>1/2 onion (finely chopped)</li>
+      <li>1/2 cup white wine</li>
+      <li>1/4 tsp saffron threads</li>
+      <li>1/2 cup Parmesan cheese (grated)</li>
+      <li>2 tbsp butter</li>
+      <li>Salt and pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Heat broth in a pot and keep warm.</li>
+      <li>Sauté onions in butter until soft.</li>
+      <li>Add rice and toast for 2 minutes.</li>
+      <li>Pour in white wine and stir until absorbed.</li>
+      <li>Add broth one ladle at a time, stirring constantly.</li>
+      <li>Stir in saffron, Parmesan cheese, and season to taste. Serve warm.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Pasta Carbonara Recipe -->
+<div class="recipe-item">
+  <label for="pasta-carbonara-toggle" class="item-name">Pasta Carbonara</label>
+  <input type="checkbox" id="pasta-carbonara-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200g spaghetti</li>
+      <li>2 eggs</li>
+      <li>50g Pecorino Romano cheese (grated)</li>
+      <li>50g pancetta (diced)</li>
+      <li>1 clove garlic (minced)</li>
+      <li>Black pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Cook spaghetti in salted boiling water until al dente.</li>
+      <li>In a bowl, mix eggs, Pecorino Romano, and black pepper.</li>
+      <li>Sauté pancetta in a pan until crispy. Add garlic and cook briefly.</li>
+      <li>Drain pasta and add to the pan. Remove from heat.</li>
+      <li>Quickly stir in egg mixture, allowing the heat of the pasta to cook the sauce.</li>
+      <li>Serve immediately with extra cheese and black pepper.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Ossobuco alla Milanese Recipe -->
+<div class="recipe-item">
+  <label for="ossobuco-milanese-toggle" class="item-name">Ossobuco alla Milanese</label>
+  <input type="checkbox" id="ossobuco-milanese-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>2 veal shanks</li>
+      <li>1 onion (chopped)</li>
+      <li>1 carrot (chopped)</li>
+      <li>1 celery stalk (chopped)</li>
+      <li>1 cup white wine</li>
+      <li>1 cup beef broth</li>
+      <li>2 tbsp tomato paste</li>
+      <li>2 tbsp butter</li>
+      <li>Salt and pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Season veal shanks with salt and pepper.</li>
+      <li>Sear them in butter until browned. Remove and set aside.</li>
+      <li>Sauté onion, carrot, and celery in the same pan.</li>
+      <li>Stir in tomato paste, then deglaze with white wine.</li>
+      <li>Add veal shanks back, pour in broth, and cover.</li>
+      <li>Simmer on low for 1.5 hours until tender. Serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Tortellini in Brodo Recipe -->
+<div class="recipe-item">
+  <label for="tortellini-brodo-toggle" class="item-name">Tortellini in Brodo</label>
+  <input type="checkbox" id="tortellini-brodo-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>200g tortellini (cheese or meat-filled)</li>
+      <li>4 cups chicken broth</li>
+      <li>1/2 onion (chopped)</li>
+      <li>1 clove garlic (minced)</li>
+      <li>1/4 tsp nutmeg</li>
+      <li>Parmesan cheese for garnish</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Heat chicken broth in a pot.</li>
+      <li>Sauté onions and garlic in a separate pan, then add to the broth.</li>
+      <li>Season with nutmeg.</li>
+      <li>Add tortellini and cook as per package instructions.</li>
+      <li>Serve hot with grated Parmesan on top.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Bruschetta al Pomodoro Recipe -->
+<div class="recipe-item">
+  <label for="bruschetta-toggle" class="item-name">Bruschetta al Pomodoro</label>
+  <input type="checkbox" id="bruschetta-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>4 slices of Italian bread</li>
+      <li>2 tomatoes (diced)</li>
+      <li>1 clove garlic (minced)</li>
+      <li>2 tbsp olive oil</li>
+      <li>Fresh basil leaves</li>
+      <li>Salt to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Toast bread slices until golden brown.</li>
+      <li>Mix tomatoes, garlic, olive oil, and salt.</li>
+      <li>Spoon the mixture onto toasted bread.</li>
+      <li>Garnish with fresh basil leaves and serve.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Focaccia Genovese Recipe -->
+<div class="recipe-item">
+  <label for="focaccia-genovese-toggle" class="item-name">Focaccia Genovese</label>
+  <input type="checkbox" id="focaccia-genovese-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>500g flour</li>
+      <li>300ml water</li>
+      <li>2 tbsp olive oil</li>
+      <li>1 tsp salt</li>
+      <li>1 tsp sugar</li>
+      <li>1 packet dry yeast</li>
+      <li>Rosemary for topping</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Dissolve yeast in warm water with sugar.</li>
+      <li>Mix with flour, olive oil, and salt. Knead into a dough.</li>
+      <li>Let rise for 1 hour.</li>
+      <li>Flatten dough into a baking tray.</li>
+      <li>Dimple surface with fingers, drizzle olive oil, and sprinkle rosemary.</li>
+      <li>Bake at 200°C (400°F) for 25 minutes.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Arancini Recipe -->
+<div class="recipe-item">
+  <label for="arancini-toggle" class="item-name">Arancini</label>
+  <input type="checkbox" id="arancini-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>2 cups risotto (leftover or fresh)</li>
+      <li>1/2 cup mozzarella (diced)</li>
+      <li>1/2 cup breadcrumbs</li>
+      <li>1 egg (beaten)</li>
+      <li>Oil for frying</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Shape risotto into balls, placing mozzarella in the center.</li>
+      <li>Coat with egg and breadcrumbs.</li>
+      <li>Deep fry until golden brown.</li>
+      <li>Drain excess oil and serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Saltimbocca alla Romana Recipe -->
+<div class="recipe-item">
+  <label for="saltimbocca-toggle" class="item-name">Saltimbocca alla Romana</label>
+  <input type="checkbox" id="saltimbocca-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+    <h3>Ingredients:</h3>
+    <ul class="ingredients-list">
+      <li>4 veal cutlets</li>
+      <li>4 slices prosciutto</li>
+      <li>Fresh sage leaves</li>
+      <li>1/2 cup white wine</li>
+      <li>2 tbsp butter</li>
+      <li>Salt and pepper to taste</li>
+    </ul>
+    <h3>Instructions:</h3>
+    <ol class="steps-list">
+      <li>Top veal cutlets with prosciutto and sage leaves. Secure with toothpicks.</li>
+      <li>Sear veal in butter until browned on both sides.</li>
+      <li>Deglaze with white wine and simmer for a few minutes.</li>
+      <li>Season with salt and pepper, then serve hot.</li>
+    </ol>
+  </div>
+</div>
+
+
+</div>
+
+<footer>
+  <div class="footer-content">
+      <h3>Cuisines</h3>
+      <p>
+          <a href="chinese.html">Chinese</a> |
+          <a href="punjabi.html">Punjabi</a> |
+          <a href="bengali.html">Bengali</a> |
+          <a href="italian.html">Italian</a> |
+          <a href="starter.html">Starters</a> |
+          <a href="mocktail.html">Mocktails</a> |
+          <a href="south.html">South Indian</a> |
+          <a href="deserts.html">Desserts</a> |
+          <a href="gujarati.html">Gujarati</a>
+      </p>
+      <p>&copy; 2025 Food Recipe Hub. All rights reserved.</p>
+      <p>Follow us on:
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a>
+      </p>
+  </div>
+</footer>
+</body>
+</html>
+
+
